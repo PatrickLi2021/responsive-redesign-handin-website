@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-headers">
+            <h1 class="title">Responsive Redesign</h1>
+            <h2>Enhancing User Experience for the Lower Providence Community Library</h2>
+        </div>
+        <div class="responsive-pic">
+            <img src="assets/responsivepic.png" alt="Picture of cartoon responsive website for tablet, desktop, and mobile">
+        </div>
+        <hr class="horizontal-line">
+        <h1>Project Overview</h1>
+        <p>The goal of this project was to practice the workflow of redesigning a simple website by identifying flaws in an existing interface. The primary objective was to transform the interface into a user-friendly platform that enhances user satisfaction
+            while also maintaining the core content and goals of the website. For this project, I chose the <b>Lower Providence Community Library </b>website, which is a library located in the greater Philadelphia region. <br><br>The process included
+            first identifying usability problems of the website including those related to efficiency, learnability, memorability, and accessibility. Next, I completed some preliminary sketches and low fidelity wireframes to brainstorm and quickly produce
+            various layouts and page structures. Afterwards, I came to a final sketch that I then improved upon by creating 3 high fidelity mockups (one for mobile, one for tablet, and one for desktop) with the use of a style guide. Lastly, using the
+            high fidelity mockups, I created the page itself using HTML and CSS.
+        </p>
+        <hr class="horizontal-line">
+        <h2>Part 1: Identifying Usability Problems</h2>
+        <p>The original website for the Lower Providence Community Library can be found at this link: <a href="https://lowerprovidencelibrary.org/">Library Website</a>. I chose this website because, while it's simplistic, I believe that there are many areas
+            of improvement that can be done regarding things like navigation and ease-of-use when performing tasks such as checking new books and creating a library account.</p>
+
+        <h3>Efficiency:</h3>
+        <ul>
+            <li>
+                There's a sliding gallery near the bottom of the page where the user must manually click through different books to see all the new releases instead of being able to search for them.
+            </li>
+            <li>
+                The events are organized in a Google Calendar where the user must manually click through multiple events in a day to find the one they're looking for. One possible improvement could be to display the upcoming events on the home screen.
+            </li>
+            <li>
+                There are random images that lead to a lot of unnecessary scrolling and lead to confusion, such as the Beanstack logo and Newest Arrivals picture. For example, they can be replaced with bold text that tells the user what the link below does.
+            </li>
+            <li>
+                There’s no easy way for the user to register for a library account right on the website. They have to navigate to a separate website to do so and this may be frustrating for the user.
+            </li>
+        </ul>
+
+        <h3>Layout and Navigation:</h3>
+        <ul>
+            <li>
+                The main navigation bar is at the bottom of the page when the user first arrives at the website, which may be unintuitive for most users.
+            </li>
+            <li>
+                The main picture at the top is blurry and should be smaller so users know what they are scrolling down to and so that it doesn’t cover the entire page.
+            </li>
+            <li>
+                The logo for the library at the top of the website is small and doesn’t have a lot of contrast with the background, making it difficult to read.
+            </li>
+            <li>
+                On an enlarged monitor, the font of the items in the navigation bar is rather small and the picture takes up too much space.
+            </li>
+            <li>
+                The 4 red buttons to access your library account, sign up to join the newsletter, get a library card, and register for a library program are not the same size.
+            </li>
+        </ul>
+        <h3>Learnability:</h3>
+        <ul>
+            <li>
+                The location of the library events in a submenu item doesn't help users to remember where to locate events. If they come back to this website in the future, it may be hard to know where to go.
+            </li>
+            <li>
+                There is no easy way for the users to locate how to log into their account. Instead, it is a small button located further down on the page.
+            </li>
+        </ul>
+        <h3>Memorability:</h3>
+        <ul>
+            <li>
+                Some headings, such as “Welcome to the Library!” on the main page, should be centered so users can better remember what these important web pages look like.
+            </li>
+            <li>
+                There is no page layout consistency for the Adult Services, Child Services, and Teen Services pages, making it difficult for users to quickly pinpoint and understand which page they are on, as well as locate information on that page.
+            </li>
+        </ul>
+
+
+        <h3>Accessibility Issues:</h3>
+        <p>To begin, there are 5 different contrast issues present on the page. The main header/title of the webpage has low contrast against its background picture and four red buttons further down on the page have contrast issues with the text on them
+            as well. Additionally, there is a sliding gallery in the main body of the web page that contains 2 pictures without any alternative text and several instances of redundant title text or small title text. On the other hand, many other features
+            on the web page have ARIA labels as well as linked images with alternative text, which are good features to have. From a visual perspective, I agree with a lot of the findings that were generated in the report. <br><br> A lot of the text on
+            the screen, whether it be on the navigation bar or on the main body seems to be too small for the user to easily read. Furthermore, viewing the website on a mobile device is difficult because some of the information, text, and headings are
+            cut off. Lastly, using a secondary monitor where the width of the screen is larger than the height causes the layout to be distorted and makes the text very small.
+        </p>
+        <hr class="horizontal-line">
+        <h2>Part 2: Visual Redesign</h2>
+        <p>In the first part of this task, I performed a speed sketching exercise in which I quickly sketched 9 options for the website redesign. This helped me brainstorm many different possible webpage layouts and compare attributes across them. The results
+            of this activity are shown below:</p>
+        <div class="speed-sketches">
+            <img src="assets/sketches.jpg" alt="Speed sketching sketches">
+        </div>
+        <p>Afterwards, I analyzed these sketches and thought about elements that I would want to include in a final webpage. Some attributes that I wanted to include were having the navigation bar stick to the top of the page, make each button the same dimensions,
+            and include upcoming events on the homepage. My final sketch looked like the following:</p>
+        <div class="final-sketch">
+            <img src="assets/final_sketch.jpg" alt="Final sketch">
+        </div>
+
+        <h3>Low Fidelity Wireframing:</h3>
+        <p>Using my final sketch as a reference, I proceeded to create 3 wireframes for each screen size (mobile, tablet, and desktop). Each wireframe contained the same content and was designed in a way that made information accessible and user-friendly,
+            even on smaller screens. Each feature in the wireframes is also annotated by the problem that it solves:</p>
+        <div class="lofi-wireframes">
+            <div class="mobile-lofi">
+                <h4>Mobile Low Fidelity Wireframes:</h4>
+                <img src="assets/mobile_lofi_wireframe_1.png" alt="Mobile low fidelity wireframe using iPhone 13 mini, page 1">
+                <img src="assets/mobile_lofi_wireframe_2.png" alt="Mobile low fidelity wireframe using iPhone 13 mini, page 2">
+            </div>
+            <div class="tablet-lofi">
+                <h4>Tablet Low Fidelity Wireframes:</h4>
+                <img src="assets/tablet_lofi_wireframe_1.png" alt="Tablet low fidelity wireframe using iPad Pro 11, page 1">
+                <img src="assets/tablet_lofi_wireframe_2.png" alt="Tablet low fidelity wireframe using iPad Pro 11, page 2">
+            </div>
+            <div class="desktop-lofi">
+                <h4>Desktop Low Fidelity Wireframe:</h4>
+                <img src="assets/desktop_lofi_wireframe.png" alt="Desktop low fidelity wireframe">
+            </div>
+        </div>
+        <h3>Visual Design Style Guide: </h3>
+        <div class="vis-design-guide">
+            <img src="assets/visual_design_guide.png">
+        </div>
+        <h3>High-Fidelity Mockups:</h3>
+        <p>Next, I designed 3 high fidelity mockups that represent the final, polished look of the new website. Each of the 3 wireframes are based on their low fidelity counterparts and were created using the visual design style guide. These mockups are
+            shown below:</p>
+        <div class="hifi-wireframes">
+            <div class="mobile-hifi">
+                <div class="mobile-hifi-header">
+                    <h4>Mobile High Fidelity Mockups</h4>
+                </div>
+                <div class="mobile-hifi-images">
+                    <img src="assets/mobile_hifi_wireframe_1.png" alt="First page of the mobile high fidelity mockup">
+                    <img src="assets/mobile_hifi_wireframe_2.png" alt="Second page of the mobile high fidelity mockup">
+                    <img src="assets/mobile_hifi_wireframe_3.png" alt="Third page of the mobile high fidelity mockup">
+                </div>
+            </div>
+            <div class="tablet-hifi">
+                <div class="tablet-hifi-header">
+                    <h4>Tablet High Fidelity Mockups</h4>
+                </div>
+                <div class="tablet-hifi-images">
+                    <img src="assets/tablet_hifi_wireframe_1.png" alt="First page of the tablet high fidelity mockup">
+                    <img src="assets/tablet_hifi_wireframe_2.png" alt="Second page of the tablet high fidelity mockup">
+                    <img src="assets/tablet_hifi_wireframe_3.png" alt="Third page of the tablet high fidelity mockup">
+                </div>
+            </div>
+            <div class="desktop-hifi">
+                <div class="desktop-hifi-header">
+                    <h4>Desktop High Fidelity Mockup</h4>
+                </div>
+                <div class="desktop-hifi-images">
+                    <img src="assets/desktop_hifi_wireframe.png" alt="Desktop high fidelity mockup">
+                </div>
+            </div>
+        </div>
+        <hr class="horizontal-line">
+        <h2>Part 3: Responsive Redesign</h2>
+        <p>Using the high fidelity prototypes, I created the responsive final page using HTML and CSS. The link to the website is attached here: <a href="https://patrickli2021.github.io/responsive-redesign-website/"> Final Website</a></p>
+        <p><b>Notes about Accessibility Using WebAIM:</b>The only alerts that are present </p>
+        <hr class="horizontal-line">
+        <h2>Conclusion:</h2>
+        <p>Overall, I found many issues related to the original website that could be fixed by making content larger (i.e. headers, texts, logos, and other pictures) and reorganizing this content in a more user-friendly way. For example, including the navigation
+            bar at the top was an improvement that was made and also making it easier for the user to locate certain important items such as upcoming events, reading challenges, and how to register for an account or get a library card. In the end, I had
+            a good experience analyzing different design choices, creating mockups, iterating over those designs, and creating a polished final product.</p>
+    </div>
+
+</body>
+
+
+</html>
